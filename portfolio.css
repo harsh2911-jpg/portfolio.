@@ -1,0 +1,269 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+  }
+  
+  /* Navbar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #e50914;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #e50914;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    /* Replace background with funky abstract image + gradient */
+    background: 
+      linear-gradient(135deg, rgba(192, 174, 175, 0.8) 0%, rgba(20,20,20,0.9) 80%),
+      url('https://verpex.com/assets/uploads/images/blog/How-to-become-a-Backend-Developer.jpg?v=1665484477') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* transparency kam ki (0.3 se 0.6) */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content h1 span {
+    color: #e50914;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #ccc;
+  }
+  
+  .hero-content .btn {
+    background: #e50914;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.3s ease;
+  }
+  
+  .hero-content .btn:hover {
+    background: #b00610;
+    transform: translateY(2px);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+
+  .about-section {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(229, 9, 20, 0.3);
+    color: #eee;
+    backdrop-filter: blur(5px);
+  }
+  
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #e50914;
+    text-align: center;
+  }
+  
+  .about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #ccc;
+  }
+  
+  .about-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  
+  .skills-list {
+    list-style-type: square;
+    padding-left: 20px;
+    color: #ccc;
+    margin-bottom: 30px;
+  }
+  
+  .skills-list li {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  /* Section wrapper */
+  .projects-section {
+    padding: 100px 20px;
+  }
+  
+  /* Inner container like About section */
+  .projects-container {
+    max-width: 900px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 40px;
+    border-radius: 10px;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+  }
+  
+  /* Section title */
+  .section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: red;
+    transition: color 0.3s ease;
+  }
+  
+  /* Each project block */
+  .project-item {
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .project-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+  }
+  
+  .project-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+  
+  .project-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cccccc;
+    transition: color 0.3s ease;
+  }
+
+
+
+  /* Project Image Styling */
+.project-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .project-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+  }
+  
+
+  .project-item a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  
+  .project-item a:hover h3 {
+    color: red;
+  }
+
+
+
